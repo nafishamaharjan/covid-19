@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid tracking with prediction system</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <div class="main-3">
+        <div class="main-home-3">
+            <div class="main-home-left">
+                <div class="navbar">
+                    <div class="navbar-top">
+                        <a href="home.html"><img src="images2/covid-19.png"
+                                style="height: 85px; width: 85px; padding-bottom: 20px; padding-top: 25px;"></a>
+                    </div>
+                    <div class="navbar-bottom">
+                        <a href="home.html" class="navbar-bottom-extra">
+                            <img src="images2/home.png">Home</a>
+                        <a href="cases.html" class="navbar-bottom-extra">
+                            <img src="images2/medical-records.png">Cases</a>
+                        <a href="prediction.html" class="navbar-bottom-extra">
+                            <img src="images2/graph.png">Prediction</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-home-right-3">
+                <div class="main-home-right-top-2">
+                    <div class="nav-top" style="margin-top: 15px; padding-top: 20px;">
+                        <div class="navbar-horizontal">
+                            <a href="https://www.who.int/" target="_blank" style="margin-left: 50px;">WHO</a>
+                            <a href="https://heoc.mohp.gov.np/" target="_blank">HEOC</a>
+                            <a href="https://mohp.gov.np/" target="_blank">MOHP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-home-right-middle-2"
+                    style="margin-left: 10%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                    <div class="country-box" style="padding-top: 25px;">
+                        <div class="loading">Nepal</div>
+                    </div>
+                    <div style="display: flex; padding-left: 20px; margin-top: -10px;">
+                        <div class="box-cases" style="border-right: 1px solid #a7a2a2;">
+                            <div>
+                                <div
+                                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-bottom: 14px;">
+                                    <div
+                                        style="font-weight: bold; font-size: 22px; padding-left: 20px; color: #585656;">
+                                        Total Data
+                                    </div>
+                                    <div>
+                                        <span
+                                            style="font-weight: bold; color: rgb(30, 145, 84); padding-left:53%;">Updated
+                                            at: </span>
+                                        <time id="datas" datetime=""></time>
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-left: -19%; margin-right: -35px;">
+                                    <div class="card-body-1">
+                                        <div style="padding-left:120px;">
+                                            <img src="images2/virus-1.png">
+                                        </div>
+                                        <div>
+                                            <div class="total-cases" style="padding-top: 20px; padding-left: 8px;">
+                                                <div class="title" style="color: rgb(30, 145, 84);">Total cases</div>
+                                                <div id="total_Cases" class="value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body-1">
+                                        <div style="padding-left:40px;">
+                                            <img src="images2/strong-1.png">
+                                        </div>
+                                        <div>
+                                            <div class="recovered" style="padding-top: 20px; padding-left: 8px;">
+                                                <div class="title" style="color: rgb(30, 145, 84);">Recovered</div>
+                                                <div id="totalRecovered" class="value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body-1">
+                                        <div style="padding-left:40px;">
+                                            <img src="images2/grave-1.png">
+                                        </div>
+                                        <div>
+                                            <div class="deaths" style="padding-top: 20px; padding-left: 8px;">
+                                                <div class="title" style="color: rgb(30, 145, 84);">Deaths</div>
+                                                <div id="totalDeaths" class="value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-cases">
+                            <div>
+                                <div
+                                    style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-bottom: 14px; ">
+                                    <div
+                                        style="font-weight: bold; font-size: 22px; padding-left: 35px; color: #585656;">
+                                        Last 24 Hours Update
+                                    </div>
+                                    <div>
+                                        <span
+                                            style="font-weight: bold; color: rgb(30, 145, 84); padding-left: 50%;">Updated
+                                            at: </span>
+                                        <time id="d" datetime=""></time>
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-left: -20%;">
+                                    <div class="card-body-1">
+                                        <div style="padding-left:170px;">
+                                            <img src="images2/virus-1.png">
+                                        </div>
+                                        <div>
+                                            <div class="total-cases" style="padding-top: 20px; padding-left: 8px;">
+                                                <div class="title" style="color: rgb(30, 145, 84);">New cases</div>
+                                                <div id="new_Cases" class="value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body-1">
+                                        <div style="padding-left:40px;">
+                                            <img src="images2/strong-1.png">
+                                        </div>
+                                        <div>
+                                            <div class="recovered" style="padding-top: 20px; padding-left: 8px;">
+                                                <div class="title" style="color: rgb(30, 145, 84);">Recovered</div>
+                                                <div id="newRecovered" class="value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body-1">
+                                        <div style="padding-left:40px;">
+                                            <img src="images2/grave-1.png">
+                                        </div>
+                                        <div>
+                                            <div class="deaths" style="padding-top: 20px; padding-left: 8px;">
+                                                <div class="title" style="color: rgb(30, 145, 84);">Deaths</div>
+                                                <div id="newDeaths" class="value"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        dates = [];
+        cases_list = [];
+        recovered_data = [];
+        death_data = [];
+
+
+        var requestOptions = {
+            method: "GET",
+            redirect: "follow",
+        };
+
+        fetch("https://pomber.github.io/covid19/timeseries.json", requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                data["Nepal"].forEach(({ date, confirmed, recovered, deaths }) => {
+                    dates.push(date);
+                    cases_list.push(confirmed);
+                    recovered_data.push(recovered);
+                    death_data.push(deaths);
+                })
+                const total_cases = cases_list[cases_list.length - 1];
+                const oldcases = cases_list[cases_list.length - 2];
+                const date = dates[dates.length - 1];
+                const newcases = total_cases - oldcases;
+                const total_recovered = recovered_data[recovered_data.length - 1];
+                // console.log(total_recovered);
+                const oldrecovered = recovered_data[recovered_data.length - 2];
+                const newrecovered = total_recovered - oldrecovered;
+                const deaths = death_data[death_data.length - 1];
+                const olddeaths = death_data[death_data.length - 2];
+                const newdeaths = deaths - olddeaths;
+                // console.log(total_cases);
+                document.getElementById("total_Cases").innerHTML = total_cases;
+                document.getElementById("new_Cases").innerHTML = newcases;
+
+                document.getElementById("datas").innerHTML = date;
+                document.getElementById("d").innerHTML = date;
+                document.getElementById("totalRecovered").innerHTML = total_recovered;
+                document.getElementById("newRecovered").innerHTML = newrecovered;
+                document.getElementById("totalDeaths").innerHTML = deaths;
+                document.getElementById("newDeaths").innerHTML = newdeaths;
+
+
+            }
+            );
+
+
+    </script>
+</body>
+
+</html>

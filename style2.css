@@ -1,0 +1,211 @@
+body {
+  margin: 0px;
+}
+.navbar {
+  background: rgb(32, 172, 97);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+  min-width: 7rem;
+  position: fixed;
+  z-index: 999;
+  align-items: center;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.navbar-bottom {
+  display: flex;
+  flex-direction: column;
+}
+.navbar-bottom-extra {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.navbar-bottom img {
+  height: 25px;
+  width: 28px;
+  padding-bottom: 7px;
+  padding-left: 25px;
+  padding-top: 50px;
+}
+.navbar-bottom a:hover {
+  text-decoration: underline;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: black;
+}
+.main-home-right-top-1,
+.main-home-right-top-2 {
+  display: flex;
+}
+.navbar-horizontal {
+  margin-left: 0px;
+  display: flex;
+  padding-left: 40%;
+}
+.navbar-horizontal a {
+  margin-top: 0px;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.navbar-horizontal a:hover {
+  color: rgb(30, 145, 84);
+}
+.loading {
+  font-size: 3.3em;
+  font-weight: bold;
+  color: rgb(28, 129, 75);
+  padding-bottom: 7px;
+  padding-left: 10px;
+  width: 70%;
+}
+.change-country {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  background: rgb(241, 239, 239);
+  border-radius: 45px;
+  margin-top: 21px;
+  padding-top: 15px;
+  padding-right: 17px;
+  padding-left: 17px;
+  margin-bottom: 7px;
+}
+.change-country:hover {
+  background: rgb(255, 255, 255);
+  border-right: 1px solid rgb(30, 145, 84);
+  border-left: 1px solid rgb(30, 145, 84);
+}
+.hide {
+  display: none;
+}
+.search-country {
+  position: relative;
+}
+.search-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 30px;
+  background-color: rgb(37, 161, 95);
+  opacity: 0.8;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.search-box input {
+  font-size: 16px;
+  width: 90%;
+  border: none;
+  padding-left: 6px;
+  border-radius: 5px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.country-list {
+  display: flex;
+  position: absolute;
+  top: 44px;
+  background: rgb(248, 246, 246);
+  height: 250px;
+  width: 500px;
+  overflow-y: scroll;
+  padding-left: 6px;
+  cursor: pointer;
+}
+.country-list ul {
+  width: 100%;
+  margin-top: 5px;
+}
+.country-list ul li {
+  font-weight: bold;
+  color: rgb(30, 145, 84);
+  padding: 5px;
+  list-style: none;
+  margin-left: -25px;
+}
+.country-list ul li:hover {
+  color: rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+}
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+  padding-right: 7px;
+  height: 16px;
+  width: 16px;
+}
+.fadeIn {
+  animation: ease-in-out;
+  animation-duration: 2s;
+}
+.country-box {
+  margin-left: 4%;
+  width: 60%;
+}
+.chart {
+  width: 76%;
+  height: 70vh;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 50px 0;
+  background: rgb(243, 248, 242);
+  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-right: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 30px;
+}
+.box-cases {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+}
+.card-body {
+  padding-left: 30px;
+  display: flex;
+}
+.card-body img {
+  height: 65px;
+  width: 65px;
+}
+.card-body-1 {
+  display: flex;
+}
+.card-body-1 img {
+  height: 65px;
+  width: 65px;
+}
+.title {
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+}
+.value {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+}
+
+@media only screen and(min-width:360px) {
+  .box-cases {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="main-2">
+        <div class="main-home-2">
+            <div class="main-home-left">
+                <div class="navbar">
+                    <div class="navbar-top">
+                        <a href="home.html"><img src="images2/covid-19.png"
+                                style="height: 85px; width: 85px; padding-bottom: 20px; padding-top: 25px;"></a>
+                    </div>
+                    <div class="navbar-bottom">
+                        <a href="home.html" class="navbar-bottom-extra">
+                            <img src="images2/home.png">Home</a>
+                        <a href="cases.html" class="navbar-bottom-extra">
+                            <img src="images2/medical-records.png">Cases</a>
+                        <a href="prediction.html" class="navbar-bottom-extra">
+                            <img src="images2/graph.png">Prediction</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-home-right-2">
+                <div style="display: flex; ">
+                    <div class="main-home-right-top-2">
+                        <div class="nav-top" style="margin-top: 15px; padding-top: 20px;">
+                            <div class="navbar-horizontal">
+                                <a href="https://www.who.int/" target="_blank" style="margin-left: 50px;">WHO</a>
+                                <a href="https://heoc.mohp.gov.np/" target="_blank">HEOC</a>
+                                <a href="https://mohp.gov.np/" target="_blank">MOHP</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; margin-left: 170px; ">
+                        <div class="change-country">
+                            <img src="images2/search.png" style="height: 17px; width: 17px;">
+                        </div>
+                        <div class="search-country hide " style="margin-top: 23px; margin-left: 5px;">
+                            <div class="search-box">
+                                <input type="text" id="search-input" placeholder="Search . . .">
+                                <img src="images2/close.svg" class="close" alt="close-sign">
+                            </div>
+                            <div class="country-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-home-right-middle-2"
+            style="margin-left: 10%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <div class="box-cases">
+                <div class="country-box">
+                    <div class="loading">loading...</div>
+                </div>
+                <div>
+                    <div
+                        style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding-bottom: 14px;">
+                        <span style="font-weight: bold; color: rgb(30, 145, 84); padding-left: 52%;">Updated at: </span>
+                        <time class="datas" datetime=""></time>
+                    </div>
+                    <div style="display: flex; margin-left: -19%;">
+                        <div class="card-body">
+                            <div>
+                                <img src="images2/virus-1.png">
+                            </div>
+                            <div>
+                                <div class="total-cases" style="padding-top: 20px; padding-left: 8px;">
+                                    <div class="title" style="color: rgb(30, 145, 84);">Total cases</div>
+                                    <div class="value">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <img src="images2/cough-1.png">
+                            </div>
+                            <div>
+                                <div class="infected" style="padding-top: 20px; padding-left: 8px;">
+                                    <div class="title" style="color: rgb(30, 145, 84);">Infected</div>
+                                    <div class="value">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <img src="images2/strong-1.png">
+                            </div>
+                            <div>
+                                <div class="recovered" style="padding-top: 20px; padding-left: 8px;">
+                                    <div class="title" style="color: rgb(30, 145, 84);">Recovered</div>
+                                    <div class="value">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <img src="images2/grave-1.png">
+                            </div>
+                            <div>
+                                <div class="deaths" style="padding-top: 20px; padding-left: 8px;">
+                                    <div class="title" style="color: rgb(30, 145, 84);">Deaths</div>
+                                    <div class="value">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart">
+            <canvas id="axes_line_chart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="first.js"></script>
+    <script src="second.js"></script>
+
+</body>
+
+</html>
